@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Tracking</title>
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Leaflet CSS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" 
+        integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <style>
+        /* Ensure the map has a defined height */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #map {
+            height: 100vh; /* Full viewport height */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">Loading map...</div>
+
+    <!-- Leaflet JS -->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet-src.min.js" 
+        integrity="sha512-3/WyQrhTdqSVmSifQS62akgtNBhZha2lS44TnoN9Jk3J01FvsKK4suVmz6t5FtccGb5iJw58GoFhBjPE5EPc8Q==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    ></script>
+    <!-- Socket.IO JS -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Your Custom JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
